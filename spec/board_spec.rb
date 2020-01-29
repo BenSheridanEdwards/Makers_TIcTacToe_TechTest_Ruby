@@ -36,4 +36,31 @@ describe Board do
       expect(board.show_game).to eq [['-', '-', '-'], ['-', 'X', '-'], ['-', '-', '-']]
     end
   end
+
+  context 'When player one chooses X' do
+    before(:each) do
+      board.player_1_symbol("X")
+    end
+
+    it 'should assign X to player one' do
+      expect(board.p1_symbol).to eq "X"
+    end
+
+    it 'should assign O to player two' do
+      expect(board.p2_symbol).to eq "O"
+    end
+  end
+
+  context 'When player one chooses O' do
+    before(:each) do
+      board.player_1_symbol("O")
+    end
+    it 'should assign O to player one' do
+      expect(board.p1_symbol).to eq "O"
+    end
+
+    it 'should assign X to player two' do
+      expect(board.p2_symbol).to eq "X"
+    end
+  end
 end

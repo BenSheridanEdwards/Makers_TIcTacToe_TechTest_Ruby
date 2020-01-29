@@ -33,7 +33,6 @@ class Board
 
   def player_1_move(coordinates)
     array_of_letters = coordinates.chars
-    p array_of_letters
     @board[array_of_letters.first.to_i - 1][array_of_letters.last.to_i - 1] = @p1_symbol
   end
 end
