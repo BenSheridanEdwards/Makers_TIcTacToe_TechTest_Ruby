@@ -8,4 +8,12 @@ describe Cell do
       expect(cell.empty?).to eq true
     end
   end
+
+  describe '#fill' do
+    it "replaces a blank cell with the player's symbol" do
+      expect(cell.contents).to eq "-"
+      cell.fill("X")
+      expect(cell.contents).to eq "X"
+    end
+  end
 end
