@@ -30,9 +30,12 @@ describe Board do
   end
 
   describe '#player_1_move' do
-    it "fills in a selected cell with player one's move" do
+    before(:each) do
       board.player_1_symbol("X")
-      board.player_1_move("2,2")
+    end
+
+    it "fills in a selected cell with player one's move" do
+      board.current_player_move("2,2")
       expect(board.show_game).to eq [['-', '-', '-'], ['-', 'X', '-'], ['-', '-', '-']]
     end
   end
@@ -55,12 +58,25 @@ describe Board do
     before(:each) do
       board.player_1_symbol("O")
     end
+
     it 'should assign O to player one' do
       expect(board.p1_symbol).to eq "O"
     end
 
     it 'should assign X to player two' do
       expect(board.p2_symbol).to eq "X"
+    end
+  end
+
+  context 'When a game starts, and player 1 has made their move' do
+    before(:each) do
+      board.player_1_symbol("X")
+    end
+    
+    it "should switch to player two's turn" do
+      expect(board.current_turn).to eq "Player 1"
+      board.current_player_move("2,1")
+      expect(board.current_turn).to eq "Player 2"
     end
   end
 end

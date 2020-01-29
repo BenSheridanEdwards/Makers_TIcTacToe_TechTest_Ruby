@@ -1,6 +1,6 @@
 class Board
 
-  attr_reader :board, :p1_symbol, :p2_symbol
+  attr_reader :board, :p1_symbol, :p2_symbol, :current_turn
 
   def initialize
     @board = [
@@ -10,6 +10,7 @@ class Board
   ]
     @p1_symbol = nil
     @p2_symbol = nil
+    @current_turn = "Player 1"
   end
 
   def show_game
@@ -31,9 +32,30 @@ class Board
     end
   end
 
-  def player_1_move(coordinates)
-    array_of_letters = coordinates.chars
-    @board[array_of_letters.first.to_i - 1][array_of_letters.last.to_i - 1] = @p1_symbol
+  def current_player_move(coordinates)
+    if @current_turn == "Player 1"
+      @board[row_position_from(coordinates)][column_position_from(coordinates)] = @p1_symbol 
+      @current_turn = "Player 2"
+    elsif current_turn == "Player 2"
+      @board[row_position_from(coordinates)][column_position_from(coordinates)] = @p2_symbol 
+      @current_turn = "Player 1"
+    end
     show_game
+  end
+
+  private 
+
+  def row_position_from(coordinates) 
+    array_of_letters = coordinates.chars
+    result = array_of_letters.first.to_i - 1
+
+    return result
+  end
+
+  def column_position_from(coordinates) 
+    array_of_letters = coordinates.chars
+    result = array_of_letters.last.to_i - 1
+
+    return result
   end
 end
