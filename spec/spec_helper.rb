@@ -3,9 +3,10 @@ require 'simplecov-console'
 require 'coveralls'
 Coveralls.wear!
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter([
-  SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::Console,
+  # Want a nice code coverage website? Uncomment this next line!
+  # SimpleCov::Formatter::HTMLFormatter
 ])
 SimpleCov.start
 
