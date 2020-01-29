@@ -30,3 +30,38 @@ Tic-Tac-Toe
 
 
 ```
+
+## Technologies Used
+
+### Development
+
+```
+ruby
+```
+
+### Testing and Code Quality
+
+```
+rspec
+rubocop 0.71.0
+simplecov
+simplecov-console
+Travis CI
+```
+
+## How To Run The Program
+
+- Clone this repository
+- `cd` into the directory
+- run `bundle` to install any missing dependencies
+- run `bundle exec rspec` to run the test suite
+- run `bundle exec rubocop` to run the code linter
+
+- open your REPL on the command line by typing `irb` or `pry`
+- require
+
+```
+
+```
+
+### Using the program
