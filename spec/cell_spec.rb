@@ -1,0 +1,2 @@
+describe Cell do
+end
