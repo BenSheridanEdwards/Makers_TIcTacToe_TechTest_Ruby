@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby.svg?branch=master)](https://travis-ci.com/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby)
-[![Coverage Status](https://coveralls.io/repos/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby/badge.svg?branch=master)](https://coveralls.io/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby?branch=master)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5443c13de3611e1e7c7f/test_coverage)](https://codeclimate.com/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5443c13de3611e1e7c7f/maintainability)](https://codeclimate.com/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby/maintainability)
 
 ### [Makers Academy](http://www.makersacademy.com) - Week 10 Solo Tech Test Practice
 Tic-Tac-Toe
