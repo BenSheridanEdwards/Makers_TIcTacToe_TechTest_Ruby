@@ -16,4 +16,16 @@ describe Board do
       expect(board.show_game).to eq [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
     end
   end
+
+  describe '#player_1_symbol' do
+    it 'assigns a given symbol to player one' do
+      board.player_1_symbol("X")
+      expect(board.p1_symbol).to eq "X"
+    end
+
+    it 'assigns a other symbol to player two' do
+      board.player_1_symbol("X")
+      expect(board.p2_symbol).to eq "O"
+    end
+  end
 end
