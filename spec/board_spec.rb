@@ -28,4 +28,12 @@ describe Board do
       expect(board.p2_symbol).to eq "O"
     end
   end
+
+  describe '#player_1_move' do
+    it "fills in a selected cell with player one's move" do
+      board.player_1_symbol("X")
+      board.player_1_move("2,2")
+      expect(board.show_game).to eq [['-', '-', '-'], ['-', 'X', '-'], ['-', '-', '-']]
+    end
+  end
 end
