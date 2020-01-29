@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby.svg?branch=master)](https://travis-ci.com/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby)
+[![Coverage Status](https://coveralls.io/repos/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby/badge.svg?branch=master)](https://coveralls.io/github/BenSheridanEdwards/Makers_TIcTacToc_TechTest_Ruby?branch=master)
 
 ### [Makers Academy](http://www.makersacademy.com) - Week 10 Solo Tech Test Practice
 Tic-Tac-Toe
