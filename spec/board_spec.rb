@@ -16,6 +16,4 @@ describe Board do
       expect(board.show_game).to eq [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
     end
   end
-
-  
 end
