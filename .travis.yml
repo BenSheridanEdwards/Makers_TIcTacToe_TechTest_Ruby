@@ -1,7 +1,7 @@
-  env:
-  global:
-    - CC_TEST_REPORTER_ID=8bcf547bf49d33ab7103581720a2bbd6b14f45647cd9d06b8f29664515ced321
 language: ruby
+env:
+global:
+    - CC_TEST_REPORTER_ID=8bcf547bf49d33ab7103581720a2bbd6b14f45647cd9d06b8f29664515ced321
 rvm:
   - 2.6.5
 before_script:
